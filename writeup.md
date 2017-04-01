@@ -53,4 +53,12 @@ The current lanes detection pipeline is not work well with sharp turn lanes and 
 
 ### 3. Suggest possible improvements to your pipeline
 
+Consolidate the gray scale, blur, Canny edges detection into one function call to reduce memory usage. 
+
+Reduce the lines drawing flickering in the the the draw_lines() function.
+
+Refactor the repetitive code blocks in the draw_lines() function that evaluate the min & max line points.
+
+Add curves finding logic to draw_lines() function to fine curve lanes.
+
 
